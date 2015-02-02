@@ -15,7 +15,7 @@ $(function() {
 		$('.varmi:checked').each(function(i){
 			sayi += parseInt($(this).attr('value'));
 		});// each
-		if(sayi!=0 && sayi<ustLimit)
+		if(sayi!=0 && sayi<=ustLimit)
 			$('.modal-content').removeClass('alert-danger').addClass('alert-success').html('Sanırım '+sayi+' olması lazım');
 		else if (sayi==255) 
 			$('.modal-content').removeClass('alert-success').addClass('alert-danger').html('Hepsine tıklamasan daha iyi olmaz mı?');
