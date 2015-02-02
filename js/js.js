@@ -17,8 +17,10 @@ $(function() {
 		});// each
 		if(sayi!=0 && sayi<ustLimit)
 			$('.modal-content').removeClass('alert-danger').addClass('alert-success').html('Sanırım '+sayi+' olması lazım');
-		else if(sayi>ustLimit)
+		else if (sayi==255) 
 			$('.modal-content').removeClass('alert-success').addClass('alert-danger').html('Hepsine tıklamasan daha iyi olmaz mı?');
+		else if(sayi>ustLimit)
+			$('.modal-content').removeClass('alert-success').addClass('alert-danger').html('Rastgele tıklamasan daha iyi olur!');
 		else
 			$('.modal-content').removeClass('alert-success').addClass('alert-danger').html('Seçtiğin sayı hiç birinde yok mu?');
 	});// click
