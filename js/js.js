@@ -11,7 +11,6 @@ $(function() {
 
 	$('#bul').click(function(){
 		var sayi 		= 0;
-		var ustLimit 	= 250;
 		$('.varmi:checked').each(function(i){
 			sayi += parseInt($(this).attr('value'));
 		});// each

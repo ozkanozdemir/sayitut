@@ -8,7 +8,7 @@ namespace sayibulmaca;
 
 include_once 'class/sayitut_class.php';
 
-$ustLimit	= 250;
+$ustLimit	= 500; // Üst Limit Sayısını Belirleme
 
 $sayitut 	= new sayitut($ustLimit);
 
@@ -16,6 +16,9 @@ $sayilar 	= $sayitut->sayilari_getir();
 
 include_once 'inc/head.php';
 ?>
+	<script>
+		var ustLimit 	= <?=$ustLimit?>;
+	</script>
 <div class="container">
 	<div class="row text-center">
 		<h2>Sayı Bulmaca</h2>
