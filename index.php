@@ -10,6 +10,8 @@ include_once 'class/sayitut_class.php';
 
 $ustLimit	= 500; // Üst Limit Sayısını Belirleme
 
+// try for github windows application
+
 $sayitut 	= new sayitut($ustLimit);
 
 $sayilar 	= $sayitut->sayilari_getir();
