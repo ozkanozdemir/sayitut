@@ -8,7 +8,7 @@ namespace sayibulmaca;
 
 include_once 'class/sayitut_class.php';
 
-$ustLimit	= 500; // Üst Limit Sayısını Belirleme
+$ustLimit	= 250; // Üst Limit Sayısını Belirleme
 
 $sayitut 	= new sayitut($ustLimit);
 
