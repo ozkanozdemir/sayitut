@@ -1,5 +1,7 @@
-# sayitut
-Üst Limit Değiştirme
+## sayitut
+[http://ozdemirozkan.com/sayitut/](http://ozdemirozkan.com/sayitut/)
+
+# Üst Limit Değiştirme
 
 index.php
 ``` php
