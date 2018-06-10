@@ -23,6 +23,7 @@ include_once 'inc/head.php';
 	<div class="row text-center">
 		<h2>Sayı Bulmaca</h2>
 		<h5>1 - <?=$ustLimit?> arası bir sayı tutun.</h5>
+		<h5><a href="https://github.com/ozkanozdemir/sayitut">Github</a></h5>
 	</div>
 	<?php
 		foreach ($sayilar as $key => $value) {
