@@ -8,16 +8,16 @@ namespace sayibulmaca;
 
 include_once 'class/sayitut_class.php';
 
-$ustLimit	= 250; // Üst Limit Sayısını Belirleme
+$ustLimit = isset($_GET['limit']) && $_GET['limit'] > 249 && $_GET['limit'] < 5001 ? intval($_GET['limit']) : 250; // Üst Limit Sayısını Belirleme
 
-$sayitut 	= new sayitut($ustLimit);
+$sayitut = new sayitut($ustLimit);
 
-$sayilar 	= $sayitut->sayilari_getir();
+$sayilar = $sayitut->sayilari_getir();
 
 include_once 'inc/head.php';
 ?>
 	<script>
-		var ustLimit 	= <?=$ustLimit?>;
+		var ustLimit = <?=$ustLimit?>;
 	</script>
 <div class="container">
 	<div class="row text-center">
